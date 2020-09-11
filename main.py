@@ -13,7 +13,7 @@ def getLetterGrade(scoreGrade):
     return "C+"
   elif scoreGrade <= 77.0 and scoreGrade >= 70.0: 
     return "C"
-  elif scoreGrade <= 70.0 and screGrade >= 60.0: 
+  elif scoreGrade <= 70.0 and scoreGrade >= 60.0: 
     return "D"
   else: 
     return "F"
