@@ -1,23 +1,26 @@
-scoreGrade = float(input("Enter your CMPSC 131 grade: "))
-letterGrade = ""
-if scoreGrade >= 93.0: 
-  letterGrade = "A"
-elif scoreGrade <= 93.0 and scoreGrade >= 90.0: 
-  letterGrade = "A-"
-elif scoreGrade <= 90.0 and scoreGrade >= 87.0: 
-  letterGrade = "B+"
-elif scoreGrade <= 87.0 and scoreGrade >= 83.0: 
-  letterGrade = "B"
-elif scoreGrade <= 83.0 and scoreGrade >= 80.0: 
-  letterGrade = "B-"
-elif scoreGrade <= 80.0 and scoreGrade >= 77.0: 
-  letterGrade = "C+"
-elif scoreGrade <= 77.0 and scoreGrade >= 70.0: 
-  letterGrade = "C"
-elif scoreGrade <= 70.0 and scoreGrade >= 60.0: 
-  letterGrade = "F"
-else: 
-  letterGrade = "F"
-
-print(f"Your letter grade for CMPSC 131 is {letterGrade}. ")
+def getLetterGrade(scoreGrade):
+  if scoreGrade >= 93.0: 
+    return "A"
+  elif scoreGrade <= 93.0 and scoreGrade >= 90.0: 
+    return "A-"
+  elif scoreGrade <= 90.0 and scoreGrade >= 87.0: 
+    return "B+"
+  elif scoreGrade <= 87.0 and scoreGrade >= 83.0: 
+    return "B"
+  elif scoreGrade <= 83.0 and scoreGrade >= 80.0: 
+    return "B-"
+  elif scoreGrade <= 80.0 and scoreGrade >= 77.0: 
+    return "C+"
+  elif scoreGrade <= 77.0 and scoreGrade >= 70.0: 
+    return "C"
+  elif scoreGrade <= 70.0 and screGrade >= 60.0: 
+    return "D"
+  else: 
+    return "F"
   
+def run(): 
+  entrance = float(input("Enter your CMPSC 131 grade: "))
+  print(f"Your letter grade for CMPSC 131 is {getLetterGrade(entrance)}.")
+
+if __name__ == "__main__" :
+  run()
