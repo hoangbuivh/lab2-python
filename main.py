@@ -1,4 +1,4 @@
-scoreGrade = float(input("Enter your CMPSC 131 grade: "))
+
 def getLetterGrade():
   scoreGrade = float(input("Enter your CMPSC 131 grade: "))
   letterGrade = ""
@@ -23,5 +23,5 @@ def getLetterGrade():
 
   print(f"Your letter grade for CMPSC 131 is {letterGrade} ")
 
-if __name__() == __main__: 
+if __name__ == "__main__": 
   getLetterGrade()
