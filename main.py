@@ -1,3 +1,4 @@
+#Author Hoang Bui hhb5051@psu.edu
 def getLetterGrade(scoreGrade):
   if scoreGrade >= 93.0: 
     return "A"
